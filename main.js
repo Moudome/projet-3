@@ -210,3 +210,53 @@ function updateCartIcon (){
     var cartIcon = document.querySelector("#cart-icon");
     cartIcon.setAttribute("data-quantity", quantity);
 }  
+
+//pagination
+let thisPage = 1;
+let limit = 8;
+let list = document.querySelectorAll(".shop-content .production-box");
+
+function loadItems(){
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    list.forEach((item, key) => {
+        if(key >= beginGet && key <= endGet){
+            item.style.display = "block"; 
+        }else{
+            item.style.display = "none";
+        }
+    })
+    listPage();
+}
+loadItems();
+function listPage(){
+    let count = Math.ceil(list.length / limit);
+    document.querySelector(".listPage").innerHTML = "";
+    if(thisPage != 1){
+        let prev = document.createElement("li");
+        prev.innerText = "Prev";
+        prev.setAttribute("onclick", "changePage(" + (thisPage - 1 ) +")");
+        document.querySelector(".listPage").appendChild(prev);
+    }
+
+    for(i = 1; i <= count; i++){
+        let newtPage = document.createElement("li");
+        newtPage.innerText = i;
+        if(i == thisPage){
+            newtPage.classList.add("active");
+        }
+        newtPage.setAttribute("onclick", "changePage(" + i + ")");
+        document.querySelector(".listPage").appendChild(newtPage);
+    
+    }
+      if(thisPage != count){
+        let next = document.createElement("li");
+        next.innerText = "Next";
+        next.setAttribute("onclick", "changePage(" + (thisPage + 1 ) +")");
+        document.querySelector(".listPage").appendChild(next); 
+      }
+}
+function changePage(i){
+    thisPage = i;
+    loadItems(); 
+}

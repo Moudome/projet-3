@@ -922,6 +922,27 @@ form.singn-up-connect{
    border-color: #4481eb;
 
 }
+
+
+
+
+.listPage{
+   padding: 10px;
+   text-align: center;
+   list-style: none;
+}
+.listPage li{
+ background-color:#71797c;
+ padding: 10px;
+ display: inline-block; 
+ margin: 0 5px;
+ cursor: pointer; 
+ border-radius: 50%;
+}
+.listPage .active{
+   background-color: #00bcd4;
+   color: #fff;
+}
  
 /*
 .panel-container{
