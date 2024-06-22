@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sideBar">
+        <div class="logo">
+            <p>ACHIMDAV </p>
+        </div>
+        <div class="menu">
+            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>dashboard</a>
+            <a href="customer.html"><i class="fa fa-users" aria-hidden="true"></i>customers</a>
+            <a href="#"><i class="fa fa-database" aria-hidden="true"></i>produit</a>
+            <a href="#"><i class="fa fa-check-circle" aria-hidden="true"></i>Ordres</a>
+            <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Messages</a>
+            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>sign out</a>
+        </div>
+    </div>
+     
+    <header class="header">
+        <div class="icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="input">
+            <input type="search" placeholder="search...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="image">
+            <img src="image/Achim (5).jpg" alt="">
+            <p>Moudome</p>
+        </div>
+    </header>
+     
+   <div class="container">
+    <div class="box-container">
+        <div class="box">
+             <div class="content">
+                <p>200</p>
+                <span>produit</span>
+             </div>
+             <div class="icon">
+                <i class="fa fa-database" aria-hidden="true"></i>
+             </div>
+        </div>
+        
+        
+        <div class="box">
+            <div class="content">
+               <p>100</p>
+               <span>Order</span>
+            </div>
+            <div class="icon">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+            </div>
+       </div>
+       <div class="box">
+        <div class="content">
+           <p>285</p>
+           <span>Messages</span>
+        </div>
+        <div class="icon">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+   </div>
+   <div class="box">
+    <div class="content">
+       <p>78</p>
+       <span>customers</span>
+    </div>
+    <div class="icon">
+        <i class="fa fa-users" aria-hidden="true"></i>
+    </div>
+</div>
+    </div>
+
+
+    <div class="tables">
+        <div class="table">
+            <div class="table-header">
+                <h3>recent orders</h3>
+                <a href="#" class="btn">view all</a>
+            </div>
+            <table>
+                
+                <tr><th>name</th><th>prix</th><th>payement</th><th>status</th></tr>
+                <tr><td>apple watch</td><td>$230</td><td>paid</td><td class="green">delivred</td></tr>
+                <tr><td>apple watch</td><td>$230</td><td>paid</td><td class="red">return</td></tr>
+                <tr><td>apple watch</td><td>$230</td><td>paid</td><td class="yellow">pending</td></tr>
+                <tr><td>apple watch</td><td>$230</td><td>paid</td><td class="blue">progres</td></tr>
+                <tr><td>apple watch</td><td>$230</td><td>paid</td><td class="green">delivred</td></tr>
+            </table>
+        </div>
+        <div class="customers-table">
+            <h3>recent customer</h3>
+            <div class="customers">
+            
+                <div class="box-container">
+                   
+                    <div class="customer">
+                        <img src="image/apropos.jpg" alt="">
+                        <div class="content">
+                            <p>Amine</p>
+                            <span>monaco</span>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <img src="image/apropos.jpg" alt="">
+                        <div class="content">
+                            <p>Amine</p>
+                            <span>monaco</span>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <img src="image/apropos.jpg" alt="">
+                        <div class="content">
+                            <p>Amine</p>
+                            <span>monaco</span>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <img src="image/apropos.jpg" alt="">
+                        <div class="content">
+                            <p>Amine</p>
+                            <span>monaco</span>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <img src="image/apropos.jpg" alt="">
+                        <div class="content">
+                            <p>Amine</p>
+                            <span>monaco</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+   
+   </div>
+ 
+
+   <script src="main.js"></script> 
+</body>
+</html>
