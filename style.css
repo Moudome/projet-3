@@ -245,6 +245,7 @@
  }
  .production-box{
     position: relative;
+    margin-bottom: 2rem;
  }
  .production-box:hover{
     padding: 10px;
@@ -1018,3 +1019,6 @@ form.singn-up-connect{
 .container-connect.sign-up-mode .singnin-connect{
    left: 25%;
 } 
+
+
+

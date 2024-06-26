@@ -53,7 +53,7 @@ html{
     color: var(--white);
     text-transform: capitalize;
     font-weight: 900;
-    margin: 1rem 0;
+    margin: 5rem 0;
     padding-left: 1rem ;
  }
 .sideBar .menu {
@@ -102,7 +102,7 @@ html{
     justify-content: center;
  }
  .header .image img{
-    height: 4rem;
+    height: 5rem;
     width: 4rem;
     object-fit: cover;
     border-radius: 50%;
@@ -120,7 +120,7 @@ html{
  .header .input{
     background-color: var(--white);
     width: 50rem;
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 2rem;
     border: .1rem solid var(--black);
     text-align: center;
@@ -491,4 +491,178 @@ html{
 .container .add-customer .btn:hover{
    scale: 1.1;
    border-radius: 0;
+}
+
+
+/* ajout produit admine*/
+.container .shop-content{
+   margin-top: 2rem;
+}
+.shop-content .production-box .suprimer{
+   border-radius: 1rem;
+   width: 6rem;
+   border: 1rem ;
+   cursor: pointer;
+   background-color: rgb(155, 58, 58);
+   margin-right: 1rem;
+}
+.shop-content .production-box .suprimer:hover{
+   background-color: red;
+   width: 8rem;
+}
+.shop-content .production-box .editer{
+   border-radius: 1rem;
+   width: 6rem;
+   border: 1rem ;
+   cursor: pointer;
+   background-color: rgb(64, 153, 64);
+   margin-right: 1rem;
+   
+}
+.shop-content .production-box .editer:hover{
+   background-color: green;
+   width: 8rem;
+}
+.shop-content .production-box .produ-image{
+   margin-top: 1rem;
+}
+.shop-content .production-box .view-detail{
+   border: 1rem;
+   width: 10rem;
+   font-size: 2rem;
+   cursor: pointer;
+   background-color: #a8836f;
+   margin-left: 14rem;
+   
+}
+.shop-content .production-box .view-detail:hover{
+   background-color: #c08261;
+   width: 8rem;
+}
+ /*  order*/
+.container .order-table{
+   width: 100%;
+   margin-top: 4rem;
+}
+ .container .flex{
+   margin-bottom: 5rem;
+ }
+.container .order-table tr th{
+   text-align: left;
+   background-color: var(--black);
+   color: var(--white);
+   padding: 1rem;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+   margin-top: 3rem ;
+}
+.container .order-table tr td {
+   padding: .5rem 1rem;
+   background-color: #999;
+}
+.container .order-table tr td p{
+   font-size: 1rem;
+   color: var(--black) ;
+   text-transform: lowercase;
+}
+.container .order-table tr td p.status{
+
+   color: var(--white);
+   border-radius: 3rem;
+   padding: 0 0.5rem;
+}
+.container .order-table tr td p.del{
+   background-color: #65b741;
+}
+.container .order-table tr td p.ret{
+   background-color:red;
+}
+.container .order-table tr td p.pend{
+   background-color: rgb(70, 109, 109);
+}
+.container .order-table tr td p.detail{
+   color: blue;
+   text-decoration: underline;
+}
+.container .order-table tr td p.detail:hover{
+   color: red;
+   cursor: pointer;
+}
+
+/*  messages*/
+
+.container .messages{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin-bottom: 3rem;
+}
+.container .messages .message{
+   background-color: #948787;
+   width: 30rem;
+   padding: 1rem;
+   border-radius: 2rem;
+   height: 19rem;
+   overflow: hidden;
+   border: 1rem ;
+   box-shadow: .1rem .5rem 1rem #999;
+}
+.container .messages .message .flex{
+   margin-top: 1rem;
+}
+.container .messages .message .trach i{
+  font-size: 2rem;
+  color: var(--black);
+}
+.container .messages .message .trach{
+   transform: translateX(-3rem);
+}
+.container .messages .message:hover .trach{
+   transform: translateX(0);
+}
+.container .messages .message i:hover{
+   color: red;
+   scale: 1.1;
+}
+.container .messages .message p{
+   font-size: 1rem;
+   color: var(--light-bg);
+   line-height: 2;
+   text-transform: var(--light-color);
+}
+.container .messages .message .flex .time p{
+   color: var(--black);
+   font-size: 1rem;
+}
+.container .messages .message .image{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+
+.container .messages .message .image img{
+   height: 5rem;
+   width: 5rem;
+   object-fit: cover;
+   border-radius: 50%;
+
+}
+.container .messages .message .image h3{
+   font-size: 1.3rem;
+   text-transform: capitalize;
+   color: var(--black);
+}
+.view-more .btn{
+   color: var(--black);
+   font-size: 1.3rem;
+   text-decoration: underline;
+   font-weight: 700;
+  
+}
+.view-more .btn:hover{
+   color: var(--main-color);
+   margin-left: 1rem;
 }
